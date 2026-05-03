@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Pegawai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>📝 To-Do List Pegawai</h2>
+        
+        <!-- Informasi Hari & Tanggal -->
+        <div id="dateInfo" class="date-info"></div>
+
+        <!-- Form Input -->
+        <div class="form-group">
+            <input type="text" id="nameInput" placeholder="Nama">
+            <input type="text" id="positionInput" placeholder="Jabatan">
+        </div>
+        <div class="form-group">
+            <textarea id="taskInput" placeholder="Tulis tugas di sini..." rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <select id="urgencyInput">
+                <option value="">Pilih Urgensi</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button id="addBtn">Submit</button>
+        </div>
+
+        <!-- Tabel Tugas -->
+        <div class="table-container">
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>Selesai</th>
+                        <th>Nama</th>
+                        <th>Jabatan</th>
+                        <th>Tugas</th>
+                        <th>Urgensi</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data tugas akan muncul di sini -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tombol Delete All -->
+        <div class="delete-all-container">
+            <button id="deleteAllBtn" class="delete-all-btn">Delete All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
